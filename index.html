@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="pic">
+        <div class="transition-effect">Хочу на море!</div>
+    </div>
+
+    <div id="digit">
+        <div id="stripe">0123456789</div>
+    </div>
+
+    <script>
+        const digit = document.querySelector('#digit');
+        const stripe = document.querySelector('#stripe');
+
+        digit.addEventListener('click', () => {
+            stripe.classList.add('animate');
+        })
+    </script>
+
+
+    <div class="transforme-rotate">
+        <img class="loader" src="images/gipno.jpg" alt="rotate" width="400" height="400">
+    </div>
+
+    <div class="transforme-translate">
+        <img src="images/automobile.png" alt="translate" width="500" height="250">
+    </div>
+
+    <div class="transforme-scale">
+        <img src="images/heart.png" alt="scale" width="298" height="261">
+    </div>
+
+    <!-- <div class="preload">
+        <img class="loader" src="images/preload.png" alt="preload" width="200" height="200">
+    </div> -->
+
+    <div class="wrapper">
+        <div class="animation-item"></div>
+    </div>
+</body>
+</html>
